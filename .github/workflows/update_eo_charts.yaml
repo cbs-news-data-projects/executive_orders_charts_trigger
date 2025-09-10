@@ -34,3 +34,4 @@ jobs:
 
       - name: Run script
         run: Rscript -e 'source("update_charts.R")'
+        
