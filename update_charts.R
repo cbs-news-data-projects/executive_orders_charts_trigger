@@ -2,10 +2,10 @@ library(DatawRappr)
 library(lubridate)
 
 # Retrieve API key from env
-api_key <- Sys.getenv("DATAWRAPPER_API_KEY")
+api_key <- Sys.getenv("DATAWRAPPER_ACCESS_TOKEN")
 # Check if API key is present
 if (api_key == "") {
-  stop("Datawrapper API key not found. Please set the DATAWRAPPER_API_KEY environment variable.")
+  stop("Datawrapper API key not found. Please set the DATAWRAPPER_ACCESS_TOKEN environment variable.")
 }
 # Authenticate with Datawrapper
 datawrapper_auth(api_key)
